@@ -1,14 +1,31 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "paymentExpirationAlert": [
+    {
+      "dateFrom": "2024-01-01T00:00:00",
+      "dateTo": "2024-02-01T23:59:59",
+      "ownerId": 1,
+      "description": "Expiración de pago cercana",
+      "alertMessage": "Alerta de expiración de pago para el propietario 1."
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
+  "successfulPayment": [
+    {
+      "status": "COMPLETED",
+      "amount": 5000,
+      "ownerId": 1,
+      "description": "Pago exitoso de alquiler",
+      "message": "Pago exitoso realizado para el propietario 1."
+    }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "delayedPayment": [
+    {
+      "dateFrom": "2023-12-01T00:00:00",
+      "dateTo": "2024-01-01T23:59:59",
+      "description": "Pago atrasado",
+      "status": "DELAYED",
+      "amount": 5000,
+      "ownerId": 1,
+      "message": "Pago atrasado registrado para el propietario 1."
+    }
+  ]
 }
